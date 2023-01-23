@@ -3,8 +3,8 @@ const logo = document.querySelector('.logo')
 section.style.height = window.innerHeight + 'px'
 section.style.width = window.innerWidth + 'px'
 
-let xPosition = 10
-let yPosition = 10
+let xPosition = 0
+let yPosition = 0
 let xSpeed = 4
 let ySpeed = 4
 
@@ -25,9 +25,7 @@ function animate() {
 animate()
 
 window.addEventListener('resize', () => {
-  xPosition = 10
-  yPosition = 10
-
   section.style.height = window.innerHeight + 'px'
   section.style.width = window.innerWidth + 'px'
 })
+
